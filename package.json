@@ -4,10 +4,20 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+  // "scripts": {
+  //   "start": "cross-env DOTENV_CONFIG_PATH=../.env node --require dotenv/config index.js",
+  //   "test": "cross-env DOTENV_CONFIG_PATH=../.env jest --setupFiles dotenv/config",
+  //   "test:coverage": "cross-env DOTENV_CONFIG_PATH=../.env jest --coverage --setupFiles dotenv/config",
+  //   "lint": "standard",
+  //   "lint:fix": "standard --fix",
+  //   "infra:start": "docker-compose up -d --build",
+  //   "infra:stop": "docker-compose down --remove-orphans"
+  // },
+
   "scripts": {
-    "start": "cross-env DOTENV_CONFIG_PATH=../.env node --require dotenv/config index.js",
-    "test": "cross-env DOTENV_CONFIG_PATH=../.env jest --setupFiles dotenv/config",
-    "test:coverage": "cross-env DOTENV_CONFIG_PATH=../.env jest --coverage --setupFiles dotenv/config",
+    "start": "node index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "infra:start": "docker-compose up -d --build",
